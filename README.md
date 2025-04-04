@@ -21,11 +21,11 @@ This repository is a part of [*Deep-Learning Enabled Rapid and Low-Cost Detectio
 
 ### Prerequisites
 
-All codes available in the repository are written in Python 3 (https://www.python.org/). Additionally, it is highly recommended to use Jupyter Notebook (https://jupyter.org/) or Google Colab (https://colab.research.google.com/) for the training and testing of the ML models since it allows for the execution of small batches of code instead of running the entire script.
+All codes available in the repository are written in [Python 3](https://www.python.org/). Additionally, it is highly recommended to use [Jupyter Notebook](https://jupyter.org/) or [Google Colab](https://colab.research.google.com/) for the training and testing of the ML models since it allows for the execution of small batches of code instead of running the entire script.
 
-For object detection, we used YOLOv5 (https://github.com/ultralytics/yolov5), implemented in Google Colab using the PyTorch (https://pytorch.org/) framework.
+For object detection, we used [YOLOv5](https://github.com/ultralytics/yolov5), implemented in Google Colab using the [PyTorch](https://pytorch.org/) framework.
 
-For data analysis, we used Numpy (https://numpy.org/) and Pandas (https://pandas.pydata.org/). For data visualization purposes, we employed the Matplotlib (https://matplotlib.org/) library (particularly the Pyplot submodule).
+For data analysis, we used [Numpy](https://numpy.org/) and [Pandas](https://pandas.pydata.org/). For data visualization purposes, we employed the [Matplotlib](https://matplotlib.org/) library (particularly the Pyplot submodule).
 
 Listed below are the versions of the various modules used during the project:
 
@@ -42,10 +42,10 @@ The versions of the modules do not seem crucial, however we still suggest using 
 
 1. Clone the repository.
 
-	  go to https://github.com/ultralytics/yolov5
+        go to https://github.com/ultralytics/yolov5
         !git clone https://github.com/ultralytics/yolov5  # clone
-	  %cd yolov5
-	  %pip install -qr requirements.txt comet_ml  # install
+        %cd yolov5
+        %pip install -qr requirements.txt comet_ml  # install
 
         import torch
         import utils
@@ -57,7 +57,7 @@ The versions of the modules do not seem crucial, however we still suggest using 
 
 4. Train the model. Use batch number and epochs according to your preferences.
 
-	!python train.py --img 640 --batch 16 --epochs 100 --data custom_data_microplastic.yaml --weights yolov5s.pt --cache
+        !python train.py --img 640 --batch 16 --epochs 100 --data custom_data_microplastic.yaml --weights yolov5s.pt --cache
 
 5. After training, ensure to keep the "best.pt" stored in your device.
 
